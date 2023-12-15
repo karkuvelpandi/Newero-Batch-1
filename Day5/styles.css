@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+footer {
+    background-color: darkcyan;
+}
+
+
+.float-left {
+    height: 100px;
+    width: 100px;
+    color: red;
+}
