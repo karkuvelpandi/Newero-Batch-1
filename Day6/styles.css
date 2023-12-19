@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Pseudo class - state of an tag (hover,focus, active, visited)*/
+.button {
+    background-color: aqua;
+}
+
+.button:hover {
+    background-color: blue;
+}
+
+.button:active {
+    background-color: red;
+    color: white;
+}
+
+.input {
+    background-color: brown;
+}
+
+.input:focus {
+    background-color: yellow;
+}
+
+a:visited {
+    color: red;
+}
+
+/* Pseudo element- position of an element */
+
+.para::before {
+    content: "❛";
+    font-size: larger;
+    color: red;
+}
+
+.para::after {
+    content: "❜";
+}
+
+/* .para::first-line {
+    color: blue;
+    font-size: larger;
+} */
