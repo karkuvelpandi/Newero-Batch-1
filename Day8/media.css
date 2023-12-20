@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins";
+}
+
+.container {
+    height: 500px;
+    width: 1200px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: aqua;
+    /*  How to set image background */
+    background-image: url("https://images.pexels.com/photos/574069/pexels-photo-574069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.section {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    margin: 0 auto;
+    font-size: 2rem;
+    color: wheat;
+    font-weight: 800;
+    /* Important in interview */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* To build a triangle using border method */
+    /* border-right: 10px solid black;
+    border-top: 10px solid transparent; */
+}
+
+/* Mobile screens */
+@media screen and (max-width:480px) {
+    .container {
+        background-color: brown;
+        width: 100%;
+    }
+
+    .section {
+        width: 100%;
+        background-color: blueviolet;
+        font-size: 1rem;
+    }
+}
+
+/* Tablet screens */
+@media screen and (min-width:468px) and (max-width:768px) {
+    .container {
+        background-color: green;
+        width: 100%;
+    }
+
+    .section {
+        width: 100%;
+        font-size: 1rem;
+        background-color: chocolate;
+    }
+}
+
+/* Desktop screen */
+@media screen and (min-width:769px) and (max-width:1200px) {
+    .container {
+        background-color: blue;
+        width: 100%;
+    }
+
+    .section {
+        width: 100%;
+        font-size: 1.5rem;
+        background-color: orange;
+    }
+}
+
+/* TV and other larger devices */
+@media screen and (min-width:1200px) {
+    .container {
+        background-color: gold;
+        width: 100%;
+    }
+
+    .section {
+        width: 100%;
+        font-size: 2rem;
+        background-color: crimson;
+    }
+}
+
+
+
+/**********Animation related starts here ********/
+
+.animation-container {
+    background-color: aquamarine;
+    height: 500px;
+    width: 100%;
+
+}
+
+.element {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    font-size: 10px;
+    /* animation */
+    /* transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease; */
+    /* ShortHand */
+    transition: all 0.5s ease;
+
+
+    /* animation-name: spring;
+    animation-duration: 1s;
+    animation-timing-function: ease; */
+    /* animation-delay: 1s; */
+    /* shorthand */
+    animation: ourChoice 2s 1s ease infinite;
+    /* TODO: Build NEW text animation on your own */
+}
+
+.element:hover {
+    /* transform: rotateY(90deg); */
+    /* transform: scale(1.2); */
+    /* transform: translateX(100px); */
+    font-size: 2rem;
+    background-color: brown;
+
+}
+
+
+@keyframes ourChoice {
+
+    /* Overall 2s */
+    /* In 0 th second */
+    0% {
+        transform: translateX(0px);
+        background-color: brown;
+        /* opacity range 0-1 */
+        opacity: 1;
+    }
+
+    /* in 0.5 second */
+    25% {
+        transform: translateX(100px) rotate(90deg);
+        background-color: green;
+        opacity: 0.5;
+    }
+
+    /* in 1 second */
+    50% {
+        transform: translateX(50px);
+        background-color: blue;
+        opacity: 0;
+    }
+
+    /* in 1.6 second */
+    70% {
+        transform: translateX(30px);
+        background-color: red;
+        opacity: 0;
+    }
+
+    /* in 2 second */
+    100% {
+        transform: translateX(100px);
+        background-color: gainsboro;
+        opacity: 1;
+    }
+}
