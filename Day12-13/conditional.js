@@ -59,3 +59,9 @@ switch (userType) {
 10 >= 5 && 10 < 5
   ? console.log("condition passed")
   : console.log("Condition failed");
+
+// Extra
+const array2 = "dgsgf";
+if (array2) {
+  console.log(array2);
+}
