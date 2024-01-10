@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // local Storage (setItem,getItem,removeItem) 
+        // It will persist until we delete
+        // setItem
+        localStorage.setItem("Login", true)
+
+        const loginStatus = localStorage.getItem("Login")
+        console.log(loginStatus);
+
+        localStorage.removeItem("Login")
+
+        // session Storage (setItem,getItem,removeItem)
+        // It will persist until we close the tab or browser
+        sessionStorage.setItem("sessionLogin", "This is a session data")
+
+        // const sessionStatus = sessionStorage.getItem("sessionLogin")
+        // console.log(sessionStatus);
+
+        // sessionStorage.removeItem("sessionLogin")
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
